@@ -8,7 +8,8 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-
+  config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = { :host => 'https://887fafc600e94ced9a56438b988af7d9.vfs.cloud9.eu-west-1.amazonaws.com' }
   # Show full error reports.
   config.consider_all_requests_local = true
 
